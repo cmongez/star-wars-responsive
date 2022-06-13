@@ -1,0 +1,91 @@
+<!-- Implementa un sitio web básico responsivo, utilizando para ello el framework
+Bootstrap para organizar la presentación de un documento HTML.
+
+En el esquema se diferencia entre dos posibles tamaños de pantalla: tamaños
+pequeños (xs) y resto de tamaños (a partir del tamaño sm en adelante).
+
+Se pide aplicar las clases de Bootstrap necesarias para que, al cambiar el tamaño de la
+pantalla, se cambie automáticamente la disposición de los bloques como se muestra
+en el esquema -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Star Wars Responsive</title>
+</head>
+
+<body class="bg-secondary container-fluid">
+    <div class="row">
+        <header class="d-flex d-sm-block col-sm-12 bg-primary p-0">
+            <div class="d-flex align-items-center justify-content-center d-sm-block  col-3 col-sm-12 text-center container-fluid">
+                <img class="img-fluid logo" src="logo.png" alt="">
+            </div>
+            <nav class="navbar col-9 col-sm-12 navbar-expand-sm navbar-light bg-info ">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Inicio</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Tienda</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Nosotros</a>
+                      </li>
+                      
+                    </ul>
+                    <span class="navbar-text">
+                      May the force be with you
+                    </span>
+                  </div>
+                </div>
+              </nav>
+        </header>
+        <aside class="col-sm-3 container-fluid bg-warning">
+          <div class="text-center">
+            <img class="img-fluid m-3 rey" src="https://a2.tvspielfilm.de/imedia/2179/10222179,q1ecYDc39Cy2qkADbhdCK2Ta48SRUV0rii2I2SczJwKWZIFywA8meL0j3_do8365e3CcUUFEri0P6ZfSKTgb+A==.jpg" alt="">
+        </div>
+          <section class="container">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nobis dignissimos, beatae error dolorum quod perferendis nostrum consectetur necessitatibus eius. Iure quia tempore vel ullam iste ab dolores voluptatem suscipit?
+          </p>
+          
+          </section>
+          
+        </aside>
+        <main class="col-sm-9 bg-success container-fluid">
+            <section class="container">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat culpa minima iusto veritatis laudantium velit eaque nemo? Impedit magni natus, quasi mollitia labore nobis nihil, a molestias possimus rem numquam.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui provident at eligendi, id tempore dolor perspiciatis amet nemo error quam quae ullam culpa beatae alias, sequi eaque ipsum totam reprehenderit?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolores, eius quia assumenda aperiam accusantium nisi perspiciatis dignissimos explicabo? Nostrum suscipit animi id, accusantium beatae ducimus voluptatum saepe optio nisi?
+                </p>
+                <div class="text-center">
+                <img class="img-fluid kylo m-1 " src="kylo-ren.jpg" alt="">
+                </div>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus explicabo cumque ea cum blanditiis doloribus recusandae veniam voluptatibus labore aperiam incidunt totam provident ullam soluta, nostrum natus. Dolor, cumque totam?
+                </p>
+            </section>
+            
+        </main>
+       
+    
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
